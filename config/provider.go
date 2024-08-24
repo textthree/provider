@@ -1,7 +1,7 @@
 package config
 
 import (
-	"cvgo/provider/core"
+	"github.com/textthree/provider/core"
 	"os"
 )
 

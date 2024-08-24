@@ -1,8 +1,8 @@
 package etcd
 
 import (
-	"cvgo/provider"
-	"cvgo/provider/core"
+	"github.com/textthree/provider"
+	"github.com/textthree/provider/core"
 )
 
 const Name = "etcd"

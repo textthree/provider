@@ -10,6 +10,7 @@ require (
 	github.com/redis/go-redis/v9 v9.6.1
 	github.com/spf13/cast v1.7.0
 	github.com/spf13/viper v1.19.0
+	github.com/textthree/cvgokit v1.0.0
 	go.etcd.io/etcd/client/v3 v3.5.15
 	gorm.io/driver/mysql v1.5.7
 	gorm.io/gorm v1.25.11

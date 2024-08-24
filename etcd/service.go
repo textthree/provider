@@ -2,11 +2,11 @@ package etcd
 
 import (
 	"context"
-	"cvgo/provider"
-	"cvgo/provider/clog"
-	"cvgo/provider/core"
-	"cvgo/provider/core/types"
 	"fmt"
+	"github.com/textthree/provider"
+	"github.com/textthree/provider/clog"
+	"github.com/textthree/provider/core"
+	"github.com/textthree/provider/core/types"
 	clientv3 "go.etcd.io/etcd/client/v3"
 	"time"
 )

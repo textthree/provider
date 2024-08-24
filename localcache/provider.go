@@ -2,8 +2,8 @@
 package localcache
 
 import (
-	"cvgo/provider/core"
 	"fmt"
+	"github.com/textthree/provider/core"
 )
 
 const Name = "localcache"

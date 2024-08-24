@@ -1,7 +1,7 @@
 package localcache
 
 import (
-	"cvgo/provider/core"
+	"github.com/textthree/provider/core"
 )
 
 type Service interface {

@@ -1,8 +1,8 @@
 package i18n
 
 import (
-	"cvgo/provider/core"
 	"github.com/spf13/viper"
+	"github.com/textthree/provider/core"
 	"sync"
 )
 

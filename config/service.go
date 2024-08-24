@@ -1,15 +1,15 @@
 package config
 
 import (
-	"cvgo/kit/castkit"
-	"cvgo/kit/filekit"
-	"cvgo/kit/strkit"
-	"cvgo/provider/core"
-	"cvgo/provider/core/types"
 	"errors"
 	"github.com/mitchellh/mapstructure"
 	"github.com/spf13/cast"
 	"github.com/spf13/viper"
+	"github.com/textthree/cvgokit/castkit"
+	"github.com/textthree/cvgokit/filekit"
+	"github.com/textthree/cvgokit/strkit"
+	"github.com/textthree/provider/core"
+	"github.com/textthree/provider/core/types"
 	"os"
 	"path/filepath"
 	"strings"

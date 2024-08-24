@@ -1,12 +1,12 @@
 package orm
 
 import (
-	plog2 "cvgo/provider/clog"
-	"cvgo/provider/config"
-	"cvgo/provider/core"
-	"cvgo/provider/core/types"
 	"database/sql"
 	"github.com/spf13/cast"
+	plog2 "github.com/textthree/provider/clog"
+	"github.com/textthree/provider/config"
+	"github.com/textthree/provider/core"
+	"github.com/textthree/provider/core/types"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/schema"

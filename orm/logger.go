@@ -2,7 +2,7 @@ package orm
 
 import (
 	"context"
-	plpg2 "cvgo/provider/clog"
+	plpg2 "github.com/textthree/provider/clog"
 	"time"
 )
 

@@ -1,9 +1,9 @@
 package clog
 
 import (
-	"cvgo/provider/core"
 	"fmt"
 	"github.com/spf13/cast"
+	"github.com/textthree/provider/core"
 )
 
 var clogSvc *ClogService

@@ -1,6 +1,6 @@
 package types
 
-import "cvgo/provider/core"
+import "github.com/textthree/provider/core"
 
 type BeforStartCallback func(c core.Container)
 

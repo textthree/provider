@@ -1,8 +1,8 @@
 package orm
 
 import (
-	"cvgo/kit/castkit"
 	"database/sql"
+	"github.com/textthree/cvgokit/castkit"
 )
 
 // 扫描获取结果集

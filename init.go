@@ -1,13 +1,13 @@
 package provider
 
 import (
-	"cvgo/provider/clog"
-	"cvgo/provider/config"
-	"cvgo/provider/core"
-	"cvgo/provider/i18n"
-	"cvgo/provider/localcache"
-	"cvgo/provider/orm"
-	"cvgo/provider/redis"
+	"github.com/textthree/provider/clog"
+	"github.com/textthree/provider/config"
+	"github.com/textthree/provider/core"
+	"github.com/textthree/provider/i18n"
+	"github.com/textthree/provider/localcache"
+	"github.com/textthree/provider/orm"
+	"github.com/textthree/provider/redis"
 )
 
 var Services = core.NewContainer()

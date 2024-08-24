@@ -1,11 +1,11 @@
 package alioss
 
 import (
-	"cvgo/provider/config"
-	"cvgo/provider/core"
-	"cvgo/provider/core/types"
 	"github.com/redis/go-redis/v9" // https://redis.uptrace.dev/zh/guide
 	"github.com/spf13/cast"
+	"github.com/textthree/provider/config"
+	"github.com/textthree/provider/core"
+	"github.com/textthree/provider/core/types"
 	"sync"
 )
 

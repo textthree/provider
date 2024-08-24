@@ -1,9 +1,9 @@
 package orm
 
 import (
-	plog2 "cvgo/provider/clog"
-	"cvgo/provider/config"
-	"cvgo/provider/core"
+	plog2 "github.com/textthree/provider/clog"
+	"github.com/textthree/provider/config"
+	"github.com/textthree/provider/core"
 	"sync"
 )
 

@@ -2,9 +2,9 @@ package etcd
 
 import (
 	"context"
-	"cvgo/provider"
-	"cvgo/provider/config"
-	"cvgo/provider/core/types"
+	"github.com/textthree/provider"
+	"github.com/textthree/provider/config"
+	"github.com/textthree/provider/core/types"
 	clientv3 "go.etcd.io/etcd/client/v3"
 	"log"
 	"time"

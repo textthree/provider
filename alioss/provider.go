@@ -1,8 +1,8 @@
 package alioss
 
 import (
-	"cvgo/provider/config"
-	"cvgo/provider/core"
+	"github.com/textthree/provider/config"
+	"github.com/textthree/provider/core"
 	"sync"
 )
 
