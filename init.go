@@ -1,6 +1,7 @@
 package provider
 
 import (
+	"fmt"
 	"github.com/textthree/provider/clog"
 	"github.com/textthree/provider/config"
 	"github.com/textthree/provider/core"
@@ -22,8 +23,7 @@ func init() {
 	Services.Bind(&localcache.LocalCacheProvider{})
 
 	log = Services.NewSingle(clog.Name).(clog.Service)
-
-	log.Trace("provider init")
+	fmt.Println("\033[37mprovider init\033[0m", "\n")
 }
 
 func Clog() clog.Service {
