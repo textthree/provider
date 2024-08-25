@@ -13,22 +13,27 @@ import (
 	"github.com/textthree/provider/redis"
 )
 
-var Services = core.NewContainer()
+var services *core.ServicesContainer
 var log clog.Service
 
 func init() {
-	Services.Bind(&config.ConfigProvider{})
-	Services.Bind(&clog.ClogProvider{})
-	Services.Bind(&orm.OrmProvider{})
-	Services.Bind(&redis.RedisProvider{})
-	Services.Bind(&i18n.I18nProvider{})
-	Services.Bind(&localcache.LocalCacheProvider{})
+	services = core.NewContainer()
+	services.Bind(&config.ConfigProvider{})
+	services.Bind(&clog.ClogProvider{})
+	services.Bind(&orm.OrmProvider{})
+	services.Bind(&redis.RedisProvider{})
+	services.Bind(&i18n.I18nProvider{})
+	services.Bind(&localcache.LocalCacheProvider{})
 
-	log = Services.NewSingle(clog.Name).(clog.Service)
+	log = services.NewSingle(clog.Name).(clog.Service)
 	str := "[provider init] current path:" + filekit.Getwd() + ", ENV:" + syskit.Getenv("ENV")
 	fmt.Println("\033[37m"+str+"\033[0m", "\n")
 }
 
 func Clog() clog.Service {
 	return log
+}
+
+func Svc() *core.ServicesContainer {
+	return services
 }
