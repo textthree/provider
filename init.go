@@ -2,6 +2,8 @@ package provider
 
 import (
 	"fmt"
+	"github.com/textthree/cvgokit/filekit"
+	"github.com/textthree/cvgokit/syskit"
 	"github.com/textthree/provider/clog"
 	"github.com/textthree/provider/config"
 	"github.com/textthree/provider/core"
@@ -23,7 +25,8 @@ func init() {
 	Services.Bind(&localcache.LocalCacheProvider{})
 
 	log = Services.NewSingle(clog.Name).(clog.Service)
-	fmt.Println("\033[37mprovider init\033[0m", "\n")
+	str := "[provider init] current path:" + filekit.Getwd() + ", ENV:" + syskit.Getenv("ENV")
+	fmt.Println("\033[37m"+str+"\033[0m", "\n")
 }
 
 func Clog() clog.Service {
