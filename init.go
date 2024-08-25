@@ -26,7 +26,11 @@ func init() {
 	services.Bind(&localcache.LocalCacheProvider{})
 
 	log = services.NewSingle(clog.Name).(clog.Service)
-	str := "[provider init] current path:" + filekit.Getwd() + ", ENV:" + syskit.Getenv("ENV")
+	env := syskit.Getenv("ENV")
+	if env == "" {
+		env = "development"
+	}
+	str := "[provider init] current path:" + filekit.Getwd() + " ENV:" + env
 	fmt.Println("\033[37m"+str+"\033[0m", "\n")
 }
 
