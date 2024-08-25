@@ -45,6 +45,7 @@ type Service interface {
 	GetEtcd() types.EtcdConfig
 	GetFileServer() types.FileSeverConfig
 	IsDebug() bool
+	GetAliOss() types.AliOssConfig
 }
 
 // 设置(篡改)当前工作路径，以便特殊路径在运行程序时按规则找配置文件。
@@ -266,4 +267,12 @@ func (self *ConfigService) GetTokenSecret() string {
 		}
 	}
 	return ""
+}
+
+func (self *ConfigService) GetAliOss() (config types.AliOssConfig) {
+	if cfg, _ := self.getAppConfig(); cfg != nil {
+		value := cfg.Get("oss")
+		mapstructure.Decode(value, &config)
+	}
+	return
 }

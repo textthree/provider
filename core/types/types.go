@@ -8,8 +8,3 @@ type BeforStartCallback func(c core.Container)
 type Clog struct {
 	Level string
 }
-
-// 阿里 oss 配置
-type AliOss struct {
-	OSS_ID string
-}
